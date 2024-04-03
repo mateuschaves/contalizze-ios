@@ -1,17 +1,17 @@
 import SwiftUI
 
 struct CategoryListView: View {
-    let categories: [CategoryViewModel]
-    @Binding var categoriesArray: [CategoryViewModel]
+    @ObservedObject var categoryListVM: CategoryListViewModel
+    @State private var isRefreshing = false
 
-    init(categories: [CategoryViewModel], categoriesArray: Binding<[CategoryViewModel]>) {
-        self.categories = categories
-        self._categoriesArray = categoriesArray
+
+    init(categoryListVM: CategoryListViewModel) {
+        self.categoryListVM = categoryListVM
     }
 
     var body: some View {
         List {
-            ForEach(categoriesArray, id: \.id) { category in
+            ForEach(categoryListVM.categories, id: \.id) { category in
                 HStack {
                     Image(systemName: "tag")
                     Text(category.name)
@@ -37,13 +37,19 @@ struct CategoryListView: View {
             .onDelete(perform: deleteCategories)
         }
         .navigationTitle("Categories")
+        .onAppear {
+            categoryListVM.fetchCategories()
+        }
+        .refreshable {
+            categoryListVM.fetchCategories()
+        }
     }
 
     private func deleteCategory(category: CategoryViewModel) {
-        if let index = categoriesArray.firstIndex(where: { $0.id == category.id }) {
+        if let index = categoryListVM.categories.firstIndex(where: { $0.id == category.id }) {
             Api().deleteCategory(categoryID: category.id) { success in
                 if success {
-                    categoriesArray.remove(at: index)
+                    categoryListVM.categories.remove(at: index)
                 }
             }
         }
@@ -51,26 +57,12 @@ struct CategoryListView: View {
 
     private func deleteCategories(at offsets: IndexSet) {
         for index in offsets {
-            let category = categoriesArray[index]
+            let category = categoryListVM.categories[index]
             Api().deleteCategory(categoryID: category.id) { success in
                 if success {
-                    categoriesArray.remove(at: index)
+                    categoryListVM.categories.remove(at: index)
                 }
             }
         }
-    }
-}
-
-struct CategoryListView_Previews: PreviewProvider {
-    static var previews: some View {
-        let categories: [CategoryViewModel] = [
-            CategoryViewModel(category:  Category(
-                id: 1,
-                name: "Alimentação",
-                createdAt: "02/04/2024",
-                updatedAt: "02/04/2024"
-            ))
-        ]
-        return CategoryListView(categories: categories, categoriesArray: .constant(categories))
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Establishment {
+struct Establishment: Decodable {
     let id: Int
     let name: String
     let createdAt: String

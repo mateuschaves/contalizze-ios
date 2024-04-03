@@ -1,16 +1,16 @@
 import SwiftUI
 
-struct CreateCategoryView: View {
+struct CreateEstablishmentView: View {
     @Environment(\.presentationMode) var presentationMode
-    @State private var categoryName = ""
+    @State private var establishmentName = ""
     @State private var isLoading = false
 
     var body: some View {
         NavigationView {
             Form {
-                TextField("Category name", text: $categoryName)
+                TextField("Establishment name", text: $establishmentName)
             }
-            .navigationTitle("New Category")
+            .navigationTitle("New Establishment")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -19,13 +19,13 @@ struct CreateCategoryView: View {
                     } else {
                         Button(action: {
                             isLoading = true
-                            Api().createCategory(categoryName: categoryName) { _ in
+                            Api().createEstablishment(establishmentName: establishmentName) { _ in
                                 self.presentationMode.wrappedValue.dismiss()
                             }
                         }) {
                             Image(systemName: "plus")
                         }
-                        .disabled(categoryName.isEmpty)
+                        .disabled(establishmentName.isEmpty)
                     }
                 }
             }
@@ -33,8 +33,8 @@ struct CreateCategoryView: View {
     }
 }
 
-struct CreateCategoryView_Previews: PreviewProvider {
+struct CreateEstablishmentView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateCategoryView()
+        CreateEstablishmentView()
     }
 }
