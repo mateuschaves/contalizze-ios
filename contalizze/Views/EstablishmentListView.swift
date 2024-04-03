@@ -4,7 +4,6 @@ struct EstablishmentListView: View {
     @ObservedObject var establishmentListVM: EstablishmentListViewModel
     @State private var isRefreshing = false
 
-
     init(establishmentListVM: EstablishmentListViewModel) {
         self.establishmentListVM = establishmentListVM
     }
@@ -34,9 +33,9 @@ struct EstablishmentListView: View {
                     }
                 }
             }
-            .onDelete(perform: deleteCategories)
+            .onDelete(perform: deleteEstablishments)
         }
-        .navigationTitle("Categories")
+        .navigationTitle("Establishments")
         .onAppear {
             establishmentListVM.fetchEstablishments()
         }
@@ -47,14 +46,22 @@ struct EstablishmentListView: View {
 
     private func deleteEstablishment(establishment: EstablishmentViewModel) {
         if let index = establishmentListVM.establishments.firstIndex(where: { $0.id == establishment.id }) {
-            
+            Api().deleteEstablishment(establishmentID: establishment.id) { success in
+                if success {
+                    establishmentListVM.establishments.remove(at: index)
+                }
+            }
         }
     }
 
-    private func deleteCategories(at offsets: IndexSet) {
+    private func deleteEstablishments(at offsets: IndexSet) {
         for index in offsets {
             let establishment = establishmentListVM.establishments[index]
-            
+            Api().deleteEstablishment(establishmentID: establishment.id) { success in
+                if success {
+                    establishmentListVM.establishments.remove(at: index)
+                }
+            }
         }
     }
 }
