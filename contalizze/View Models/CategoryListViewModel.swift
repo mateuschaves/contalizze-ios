@@ -10,6 +10,7 @@ class CategoryListViewModel: ObservableObject {
     func fetchCategories() {
         Api().getAllCategories { categories in
             if let categories = categories {
+                print(categories)
                 self.categories = categories.map(CategoryViewModel.init)
             }
         }
@@ -17,8 +18,6 @@ class CategoryListViewModel: ObservableObject {
 }
 
 class CategoryViewModel {
-    let id = UUID()
-
     var category: Category
     
     init(category: Category) {
@@ -27,5 +26,9 @@ class CategoryViewModel {
     
     var name: String {
         return self.category.name.capitalized
+    }
+    
+    var id: Int {
+        return self.category.id
     }
 }
