@@ -1,6 +1,6 @@
 import Foundation
 
-struct Category: Codable {
+struct Category: Decodable, Hashable  {
     let id: Int
     let name: String
     let createdAt: String

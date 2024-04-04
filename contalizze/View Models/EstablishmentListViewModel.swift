@@ -16,7 +16,7 @@ class EstablishmentListViewModel: ObservableObject {
     }
 }
 
-class EstablishmentViewModel {
+class EstablishmentViewModel: Identifiable, Hashable {
     var establishment: Establishment
     
     init(establishment: Establishment) {
@@ -29,5 +29,13 @@ class EstablishmentViewModel {
     
     var id: Int {
         return self.establishment.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(establishment.id)
+    }
+    
+    static func == (lhs: EstablishmentViewModel, rhs: EstablishmentViewModel) -> Bool {
+        return lhs.establishment.id == rhs.establishment.id
     }
 }

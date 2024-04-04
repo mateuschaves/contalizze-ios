@@ -3,13 +3,16 @@ import SwiftUI
 enum Tabs: String {
     case categories
     case establishments
+    case relations
 }
 
 struct ContentView: View {
     @ObservedObject private var categoryListVM = CategoryListViewModel()
     @ObservedObject private var establishmentListVM = EstablishmentListViewModel()
+    @ObservedObject private var establishmentCategoryListVM = EstablishmentCategoryListViewModel()
     @State private var isCreatingCategory = false
     @State private var isCreatingEstablishment = false
+    @State private var isCreatingEstablishmentCategory = false
     @State private var selectedTab: Tabs = .categories
     
     var body: some View {
@@ -28,6 +31,13 @@ struct ContentView: View {
                         Text("Establishments")
                     }
                     .tag(Tabs.establishments)
+                
+                EstablishmentCategoryListView(establishmentCategoryListVM: establishmentCategoryListVM)
+                    .tabItem {
+                        Image(systemName: "slider.horizontal.3")
+                        Text("Relations")
+                    }
+                    .tag(Tabs.relations)
             }
             .navigationBarTitle(selectedTab.rawValue.capitalized)
             .navigationBarItems(trailing:
@@ -37,6 +47,8 @@ struct ContentView: View {
                             self.isCreatingCategory = true
                         case .establishments:
                             self.isCreatingEstablishment = true
+                    case .relations:
+                            self.isCreatingEstablishmentCategory = true
                     }
                 }) {
                     Image(systemName: "plus")
@@ -51,6 +63,14 @@ struct ContentView: View {
                 establishmentListVM.fetchEstablishments()
             }) {
                 CreateEstablishmentView()
+            }
+            .sheet(isPresented: $isCreatingEstablishmentCategory, onDismiss: {
+                establishmentCategoryListVM.fetchEstablishmentsCategory()
+            }) {
+                CreateEstablishmentCategoryView(
+                    categoryListVM: CategoryListViewModel(),
+                    establishmentListVM: EstablishmentListViewModel()
+                )
             }
         }
     }

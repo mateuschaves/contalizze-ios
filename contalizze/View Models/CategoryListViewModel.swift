@@ -17,7 +17,7 @@ class CategoryListViewModel: ObservableObject {
     }
 }
 
-class CategoryViewModel {
+class CategoryViewModel: Identifiable, Hashable {
     var category: Category
     
     init(category: Category) {
@@ -30,5 +30,13 @@ class CategoryViewModel {
     
     var id: Int {
         return self.category.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(category.id)
+    }
+    
+    static func == (lhs: CategoryViewModel, rhs: CategoryViewModel) -> Bool {
+        return lhs.category.id == rhs.category.id
     }
 }

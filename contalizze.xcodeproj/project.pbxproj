@@ -11,6 +11,8 @@
 		8833E3CD2BBD394A003161B1 /* EstablishmentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833E3CC2BBD394A003161B1 /* EstablishmentListViewModel.swift */; };
 		8833E3CF2BBD3B4E003161B1 /* EstablishmentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833E3CE2BBD3B4E003161B1 /* EstablishmentListView.swift */; };
 		8833E3D12BBD4407003161B1 /* CreateEstablishmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833E3D02BBD4407003161B1 /* CreateEstablishmentView.swift */; };
+		8833E3D32BBD9702003161B1 /* EstablishmentCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833E3D22BBD9702003161B1 /* EstablishmentCategory.swift */; };
+		8833E3D52BBD993F003161B1 /* EstablishmentCategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833E3D42BBD993F003161B1 /* EstablishmentCategoryListViewModel.swift */; };
 		888C8A582BBC6E8B00A35AD7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888C8A572BBC6E8B00A35AD7 /* Category.swift */; };
 		888C8A5A2BBC6F4300A35AD7 /* Establishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888C8A592BBC6F4300A35AD7 /* Establishment.swift */; };
 		888C8A5C2BBC707400A35AD7 /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888C8A5B2BBC707400A35AD7 /* api.swift */; };
@@ -23,6 +25,8 @@
 		88B400562BBBBCED00433B76 /* contalizzeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B400552BBBBCED00433B76 /* contalizzeTests.swift */; };
 		88B400602BBBBCED00433B76 /* contalizzeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B4005F2BBBBCED00433B76 /* contalizzeUITests.swift */; };
 		88B400622BBBBCED00433B76 /* contalizzeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B400612BBBBCED00433B76 /* contalizzeUITestsLaunchTests.swift */; };
+		88CB00A92BBE4788000B9DB3 /* EstablishmentCategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CB00A82BBE4788000B9DB3 /* EstablishmentCategoryListView.swift */; };
+		88CB00AB2BBE4C64000B9DB3 /* CreateEstablishmentCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CB00AA2BBE4C64000B9DB3 /* CreateEstablishmentCategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,8 @@
 		8833E3CC2BBD394A003161B1 /* EstablishmentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentListViewModel.swift; sourceTree = "<group>"; };
 		8833E3CE2BBD3B4E003161B1 /* EstablishmentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentListView.swift; sourceTree = "<group>"; };
 		8833E3D02BBD4407003161B1 /* CreateEstablishmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEstablishmentView.swift; sourceTree = "<group>"; };
+		8833E3D22BBD9702003161B1 /* EstablishmentCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentCategory.swift; sourceTree = "<group>"; };
+		8833E3D42BBD993F003161B1 /* EstablishmentCategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentCategoryListViewModel.swift; sourceTree = "<group>"; };
 		888C8A562BBC6DEF00A35AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		888C8A572BBC6E8B00A35AD7 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		888C8A592BBC6F4300A35AD7 /* Establishment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Establishment.swift; sourceTree = "<group>"; };
@@ -63,6 +69,8 @@
 		88B4005B2BBBBCED00433B76 /* contalizzeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = contalizzeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B4005F2BBBBCED00433B76 /* contalizzeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contalizzeUITests.swift; sourceTree = "<group>"; };
 		88B400612BBBBCED00433B76 /* contalizzeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contalizzeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		88CB00A82BBE4788000B9DB3 /* EstablishmentCategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentCategoryListView.swift; sourceTree = "<group>"; };
+		88CB00AA2BBE4C64000B9DB3 /* CreateEstablishmentCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEstablishmentCategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,7 @@
 			children = (
 				888C8A572BBC6E8B00A35AD7 /* Category.swift */,
 				888C8A592BBC6F4300A35AD7 /* Establishment.swift */,
+				8833E3D22BBD9702003161B1 /* EstablishmentCategory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -112,6 +121,7 @@
 			children = (
 				888C8A5D2BBC802E00A35AD7 /* CategoryListViewModel.swift */,
 				8833E3CC2BBD394A003161B1 /* EstablishmentListViewModel.swift */,
+				8833E3D42BBD993F003161B1 /* EstablishmentCategoryListViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -123,6 +133,8 @@
 				8833E3CA2BBD2433003161B1 /* CreateCategoryView.swift */,
 				8833E3CE2BBD3B4E003161B1 /* EstablishmentListView.swift */,
 				8833E3D02BBD4407003161B1 /* CreateEstablishmentView.swift */,
+				88CB00A82BBE4788000B9DB3 /* EstablishmentCategoryListView.swift */,
+				88CB00AA2BBE4C64000B9DB3 /* CreateEstablishmentCategoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -325,10 +337,14 @@
 				8833E3CF2BBD3B4E003161B1 /* EstablishmentListView.swift in Sources */,
 				8833E3D12BBD4407003161B1 /* CreateEstablishmentView.swift in Sources */,
 				888C8A5A2BBC6F4300A35AD7 /* Establishment.swift in Sources */,
+				88CB00AB2BBE4C64000B9DB3 /* CreateEstablishmentCategoryView.swift in Sources */,
 				8833E3CD2BBD394A003161B1 /* EstablishmentListViewModel.swift in Sources */,
+				88CB00A92BBE4788000B9DB3 /* EstablishmentCategoryListView.swift in Sources */,
 				88B400452BBBBCEB00433B76 /* contalizzeApp.swift in Sources */,
 				888C8A602BBC851F00A35AD7 /* CategoryListView.swift in Sources */,
+				8833E3D52BBD993F003161B1 /* EstablishmentCategoryListViewModel.swift in Sources */,
 				888C8A582BBC6E8B00A35AD7 /* Category.swift in Sources */,
+				8833E3D32BBD9702003161B1 /* EstablishmentCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -36,6 +36,87 @@ class Api {
         task.resume()
     }
     
+    func getAllEstablishmentsCategory(completion: @escaping ([EstablishmentCategory]?) -> Void) {
+        let url = baseURL.appendingPathComponent("establishment-category")
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data, error == nil else {
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+                return
+            }
+            
+            do {
+                let establishmentsCategory = try JSONDecoder().decode([EstablishmentCategory].self, from: data)
+                DispatchQueue.main.async {
+                    completion(establishmentsCategory)
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+            }
+        }
+        
+        task.resume()
+    }
+    
+    func createEstablishmentCategory(categoryId: Int, establishmentId: Int, completion: @escaping (Bool) -> Void) {
+        let url = baseURL.appendingPathComponent("establishment-category")
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let establishmentCategoryData: [String: Any] = ["categoryId": categoryId, "establishmentId": establishmentId]
+        
+        do {
+            let jsonData = try JSONSerialization.data(withJSONObject: establishmentCategoryData)
+            request.httpBody = jsonData
+        } catch {
+            DispatchQueue.main.async {
+                completion(false)
+            }
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let _ = data, error == nil else {
+                DispatchQueue.main.async {
+                    completion(false)
+                }
+                return
+            }
+            
+            DispatchQueue.main.async {
+                completion(true)
+            }
+        }
+        task.resume()
+    }
+    
+    func deleteEstablishmentCategory(establishmentCategoryID: Int, completion: @escaping (Bool) -> Void) {
+        let url = baseURL.appendingPathComponent("establishment-category").appendingPathComponent(String(establishmentCategoryID))
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "DELETE"
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let _ = data, error == nil else {
+                DispatchQueue.main.async {
+                    completion(false)
+                }
+                return
+            }
+            
+            DispatchQueue.main.async {
+                completion(true)
+            }
+        }
+        task.resume()
+    }
+    
     func createEstablishment(establishmentName: String, completion: @escaping (Bool) -> Void) {
         let url = baseURL.appendingPathComponent("establishments")
         
