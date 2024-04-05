@@ -13,6 +13,8 @@
 		8833E3D12BBD4407003161B1 /* CreateEstablishmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833E3D02BBD4407003161B1 /* CreateEstablishmentView.swift */; };
 		8833E3D32BBD9702003161B1 /* EstablishmentCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833E3D22BBD9702003161B1 /* EstablishmentCategory.swift */; };
 		8833E3D52BBD993F003161B1 /* EstablishmentCategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833E3D42BBD993F003161B1 /* EstablishmentCategoryListViewModel.swift */; };
+		883F73712BBFB94A00F59294 /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F73702BBFB94A00F59294 /* ExpensesView.swift */; };
+		883F73752BBFBE6000F59294 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F73742BBFBE6000F59294 /* Expense.swift */; };
 		888C8A582BBC6E8B00A35AD7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888C8A572BBC6E8B00A35AD7 /* Category.swift */; };
 		888C8A5A2BBC6F4300A35AD7 /* Establishment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888C8A592BBC6F4300A35AD7 /* Establishment.swift */; };
 		888C8A5C2BBC707400A35AD7 /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888C8A5B2BBC707400A35AD7 /* api.swift */; };
@@ -53,6 +55,8 @@
 		8833E3D02BBD4407003161B1 /* CreateEstablishmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEstablishmentView.swift; sourceTree = "<group>"; };
 		8833E3D22BBD9702003161B1 /* EstablishmentCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentCategory.swift; sourceTree = "<group>"; };
 		8833E3D42BBD993F003161B1 /* EstablishmentCategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentCategoryListViewModel.swift; sourceTree = "<group>"; };
+		883F73702BBFB94A00F59294 /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
+		883F73742BBFBE6000F59294 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		888C8A562BBC6DEF00A35AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		888C8A572BBC6E8B00A35AD7 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		888C8A592BBC6F4300A35AD7 /* Establishment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Establishment.swift; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 				888C8A572BBC6E8B00A35AD7 /* Category.swift */,
 				888C8A592BBC6F4300A35AD7 /* Establishment.swift */,
 				8833E3D22BBD9702003161B1 /* EstablishmentCategory.swift */,
+				883F73742BBFBE6000F59294 /* Expense.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 				8833E3D02BBD4407003161B1 /* CreateEstablishmentView.swift */,
 				88CB00A82BBE4788000B9DB3 /* EstablishmentCategoryListView.swift */,
 				88CB00AA2BBE4C64000B9DB3 /* CreateEstablishmentCategoryView.swift */,
+				883F73702BBFB94A00F59294 /* ExpensesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -288,6 +294,9 @@
 				Base,
 			);
 			mainGroup = 88B400382BBBBCEB00433B76;
+			packageReferences = (
+				883F73722BBFBD6E00F59294 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 88B400422BBBBCEB00433B76 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -333,6 +342,7 @@
 				8833E3CB2BBD2433003161B1 /* CreateCategoryView.swift in Sources */,
 				888C8A5C2BBC707400A35AD7 /* api.swift in Sources */,
 				88B400472BBBBCEB00433B76 /* ContentView.swift in Sources */,
+				883F73712BBFB94A00F59294 /* ExpensesView.swift in Sources */,
 				888C8A5E2BBC802E00A35AD7 /* CategoryListViewModel.swift in Sources */,
 				8833E3CF2BBD3B4E003161B1 /* EstablishmentListView.swift in Sources */,
 				8833E3D12BBD4407003161B1 /* CreateEstablishmentView.swift in Sources */,
@@ -341,6 +351,7 @@
 				8833E3CD2BBD394A003161B1 /* EstablishmentListViewModel.swift in Sources */,
 				88CB00A92BBE4788000B9DB3 /* EstablishmentCategoryListView.swift in Sources */,
 				88B400452BBBBCEB00433B76 /* contalizzeApp.swift in Sources */,
+				883F73752BBFBE6000F59294 /* Expense.swift in Sources */,
 				888C8A602BBC851F00A35AD7 /* CategoryListView.swift in Sources */,
 				8833E3D52BBD993F003161B1 /* EstablishmentCategoryListViewModel.swift in Sources */,
 				888C8A582BBC6E8B00A35AD7 /* Category.swift in Sources */,
@@ -512,6 +523,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = contalizze/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Contalizze;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -521,7 +534,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mateus.contalizze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -542,6 +555,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = contalizze/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Contalizze;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -551,7 +566,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mateus.contalizze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -676,6 +691,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		883F73722BBFBD6E00F59294 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 88B400392BBBBCEB00433B76 /* Project object */;
 }

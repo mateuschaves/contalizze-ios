@@ -1,6 +1,6 @@
 import Foundation
 
-struct EstablishmentCategory: Decodable {
+struct EstablishmentCategory: Decodable, Hashable {
     let id: Int
     let categoryId: Int
     let establishmentId: Int

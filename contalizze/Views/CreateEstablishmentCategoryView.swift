@@ -13,7 +13,9 @@ struct CreateEstablishmentCategoryView: View {
         NavigationView {
             Form {
                 Picker("Establishment", selection: $selectedEstablishment) {
-                    ForEach(establishmentListVM.establishments, id: \.id) { establishment in
+                    ForEach(establishmentListVM.establishments.filter { establishment in
+                        return establishment.establishment.categoryEstablishment?.count == 0
+                    }, id: \.id) { establishment in
                         Text(establishment.name).tag(establishment as EstablishmentViewModel?)
                     }
                 }.pickerStyle(.navigationLink)

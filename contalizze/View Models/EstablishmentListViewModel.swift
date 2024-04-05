@@ -10,6 +10,7 @@ class EstablishmentListViewModel: ObservableObject {
     func fetchEstablishments() {
         Api().getAllEstablishments { establishments in
             if let establishments = establishments {
+                print(establishments)
                 self.establishments = establishments.map(EstablishmentViewModel.init)
             }
         }
