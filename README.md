@@ -2,6 +2,12 @@
 
 Contalizze is a SwiftUI-based application that allows users to categorize their credit card purchases. It offers a simple and intuitive way to track and manage expenses, helping users better understand where their money is going and make more informed financial decisions.
 
+<p align="center">
+    <img src="doc/expenses.png" alt="Logo" width="200">
+    <img src="doc/categories.png" alt="Logo" width="200">
+    <img src="doc/new-category.png" alt="Logo" width="200">
+</p>
+
 ## Key Features
 
 - **Purchase Logging**: Users can log their credit card purchases by entering details such as purchase date, amount, and description.
