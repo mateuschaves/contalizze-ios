@@ -23,7 +23,6 @@ struct ExpenseView: View {
     @State private var showAllExpenses = false
     
     var body: some View {
-        NavigationView {
             List {
                 ForEach(showAllExpenses ? sortedExpenses : Array(sortedExpenses.prefix(5)), id: \.0) { expense in
                     NavigationLink(destination: Text("Detail view for \(expense.0)")) {
@@ -56,9 +55,7 @@ struct ExpenseView: View {
                     .foregroundColor(.blue)
                 }
             }
-            .navigationTitle("Expenses")
         }
-    }
 }
 
 struct ExpenseView_Previews: PreviewProvider {

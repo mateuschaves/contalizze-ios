@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08538AF67BD8AB000E471CDB /* Pods_contalizze_contalizzeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1121F895BF0EC83EFA33ED /* Pods_contalizze_contalizzeUITests.framework */; };
+		0BA9835F0CFB88609C5C7D16 /* Pods_contalizzeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33AE65CE1A7CF756988AE73E /* Pods_contalizzeTests.framework */; };
 		8833E3CB2BBD2433003161B1 /* CreateCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833E3CA2BBD2433003161B1 /* CreateCategoryView.swift */; };
 		8833E3CD2BBD394A003161B1 /* EstablishmentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833E3CC2BBD394A003161B1 /* EstablishmentListViewModel.swift */; };
 		8833E3CF2BBD3B4E003161B1 /* EstablishmentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833E3CE2BBD3B4E003161B1 /* EstablishmentListView.swift */; };
 		8833E3D12BBD4407003161B1 /* CreateEstablishmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833E3D02BBD4407003161B1 /* CreateEstablishmentView.swift */; };
 		8833E3D32BBD9702003161B1 /* EstablishmentCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833E3D22BBD9702003161B1 /* EstablishmentCategory.swift */; };
 		8833E3D52BBD993F003161B1 /* EstablishmentCategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833E3D42BBD993F003161B1 /* EstablishmentCategoryListViewModel.swift */; };
+		883D5A302BC4BE42002EE45D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D5A2F2BC4BE42002EE45D /* AppDelegate.swift */; };
 		883F73712BBFB94A00F59294 /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F73702BBFB94A00F59294 /* ExpensesView.swift */; };
 		883F73752BBFBE6000F59294 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F73742BBFBE6000F59294 /* Expense.swift */; };
 		888C8A582BBC6E8B00A35AD7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888C8A572BBC6E8B00A35AD7 /* Category.swift */; };
@@ -29,6 +32,7 @@
 		88B400622BBBBCED00433B76 /* contalizzeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B400612BBBBCED00433B76 /* contalizzeUITestsLaunchTests.swift */; };
 		88CB00A92BBE4788000B9DB3 /* EstablishmentCategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CB00A82BBE4788000B9DB3 /* EstablishmentCategoryListView.swift */; };
 		88CB00AB2BBE4C64000B9DB3 /* CreateEstablishmentCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CB00AA2BBE4C64000B9DB3 /* CreateEstablishmentCategoryView.swift */; };
+		B39C2EAD14095A3C86165AE4 /* Pods_contalizze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6920D86A7F09C7AD311886AF /* Pods_contalizze.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,12 +53,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C640EFFC424A249D80F0798 /* Pods-contalizze-contalizzeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contalizze-contalizzeUITests.debug.xcconfig"; path = "Target Support Files/Pods-contalizze-contalizzeUITests/Pods-contalizze-contalizzeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		27FDEC42007A92F6A1BB776D /* Pods-contalizze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contalizze.debug.xcconfig"; path = "Target Support Files/Pods-contalizze/Pods-contalizze.debug.xcconfig"; sourceTree = "<group>"; };
+		311FDF67F8D1A3A054ECA696 /* Pods-contalizze-contalizzeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contalizze-contalizzeUITests.release.xcconfig"; path = "Target Support Files/Pods-contalizze-contalizzeUITests/Pods-contalizze-contalizzeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		33AE65CE1A7CF756988AE73E /* Pods_contalizzeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_contalizzeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6920D86A7F09C7AD311886AF /* Pods_contalizze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_contalizze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8833E3CA2BBD2433003161B1 /* CreateCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCategoryView.swift; sourceTree = "<group>"; };
 		8833E3CC2BBD394A003161B1 /* EstablishmentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentListViewModel.swift; sourceTree = "<group>"; };
 		8833E3CE2BBD3B4E003161B1 /* EstablishmentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentListView.swift; sourceTree = "<group>"; };
 		8833E3D02BBD4407003161B1 /* CreateEstablishmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEstablishmentView.swift; sourceTree = "<group>"; };
 		8833E3D22BBD9702003161B1 /* EstablishmentCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentCategory.swift; sourceTree = "<group>"; };
 		8833E3D42BBD993F003161B1 /* EstablishmentCategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentCategoryListViewModel.swift; sourceTree = "<group>"; };
+		883D5A2F2BC4BE42002EE45D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		883F73702BBFB94A00F59294 /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
 		883F73742BBFBE6000F59294 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		888C8A562BBC6DEF00A35AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +85,10 @@
 		88B400612BBBBCED00433B76 /* contalizzeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contalizzeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		88CB00A82BBE4788000B9DB3 /* EstablishmentCategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentCategoryListView.swift; sourceTree = "<group>"; };
 		88CB00AA2BBE4C64000B9DB3 /* CreateEstablishmentCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEstablishmentCategoryView.swift; sourceTree = "<group>"; };
+		A136FA4B37A4C121639107B3 /* Pods-contalizzeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contalizzeTests.release.xcconfig"; path = "Target Support Files/Pods-contalizzeTests/Pods-contalizzeTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE70BEA243ADCB5D21D513CC /* Pods-contalizze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contalizze.release.xcconfig"; path = "Target Support Files/Pods-contalizze/Pods-contalizze.release.xcconfig"; sourceTree = "<group>"; };
+		CF1121F895BF0EC83EFA33ED /* Pods_contalizze_contalizzeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_contalizze_contalizzeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F63AED9E66C3BEC3C46B8D62 /* Pods-contalizzeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-contalizzeTests.debug.xcconfig"; path = "Target Support Files/Pods-contalizzeTests/Pods-contalizzeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39C2EAD14095A3C86165AE4 /* Pods_contalizze.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA9835F0CFB88609C5C7D16 /* Pods_contalizzeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,12 +112,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08538AF67BD8AB000E471CDB /* Pods_contalizze_contalizzeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4301F6983F49AF8F27DF4AED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27FDEC42007A92F6A1BB776D /* Pods-contalizze.debug.xcconfig */,
+				CE70BEA243ADCB5D21D513CC /* Pods-contalizze.release.xcconfig */,
+				0C640EFFC424A249D80F0798 /* Pods-contalizze-contalizzeUITests.debug.xcconfig */,
+				311FDF67F8D1A3A054ECA696 /* Pods-contalizze-contalizzeUITests.release.xcconfig */,
+				F63AED9E66C3BEC3C46B8D62 /* Pods-contalizzeTests.debug.xcconfig */,
+				A136FA4B37A4C121639107B3 /* Pods-contalizzeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		758044F505608AB30222C71D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6920D86A7F09C7AD311886AF /* Pods_contalizze.framework */,
+				CF1121F895BF0EC83EFA33ED /* Pods_contalizze_contalizzeUITests.framework */,
+				33AE65CE1A7CF756988AE73E /* Pods_contalizzeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		888C8A522BBC6DC000A35AD7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +192,8 @@
 				88B400542BBBBCED00433B76 /* contalizzeTests */,
 				88B4005E2BBBBCED00433B76 /* contalizzeUITests */,
 				88B400422BBBBCEB00433B76 /* Products */,
+				4301F6983F49AF8F27DF4AED /* Pods */,
+				758044F505608AB30222C71D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +210,7 @@
 		88B400432BBBBCEB00433B76 /* contalizze */ = {
 			isa = PBXGroup;
 			children = (
+				883D5A2F2BC4BE42002EE45D /* AppDelegate.swift */,
 				888C8A562BBC6DEF00A35AD7 /* Info.plist */,
 				888C8A552BBC6DD400A35AD7 /* Views */,
 				888C8A542BBC6DCE00A35AD7 /* View Models */,
@@ -213,9 +256,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88B400652BBBBCED00433B76 /* Build configuration list for PBXNativeTarget "contalizze" */;
 			buildPhases = (
+				1BE868100F8F0774AE5447D0 /* [CP] Check Pods Manifest.lock */,
 				88B4003D2BBBBCEB00433B76 /* Sources */,
 				88B4003E2BBBBCEB00433B76 /* Frameworks */,
 				88B4003F2BBBBCEB00433B76 /* Resources */,
+				8CD49F59F91BB7A5D34DE4C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,6 +275,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88B400682BBBBCED00433B76 /* Build configuration list for PBXNativeTarget "contalizzeTests" */;
 			buildPhases = (
+				13A6036DE8B4DB55D96791C2 /* [CP] Check Pods Manifest.lock */,
 				88B4004D2BBBBCED00433B76 /* Sources */,
 				88B4004E2BBBBCED00433B76 /* Frameworks */,
 				88B4004F2BBBBCED00433B76 /* Resources */,
@@ -248,9 +294,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88B4006B2BBBBCED00433B76 /* Build configuration list for PBXNativeTarget "contalizzeUITests" */;
 			buildPhases = (
+				D5B40E566E4EEF6A2278171D /* [CP] Check Pods Manifest.lock */,
 				88B400572BBBBCED00433B76 /* Sources */,
 				88B400582BBBBCED00433B76 /* Frameworks */,
 				88B400592BBBBCED00433B76 /* Resources */,
+				7391124A8E2528B5BBB33E1A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,6 +382,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13A6036DE8B4DB55D96791C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-contalizzeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BE868100F8F0774AE5447D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-contalizze-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7391124A8E2528B5BBB33E1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-contalizze-contalizzeUITests/Pods-contalizze-contalizzeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-contalizze-contalizzeUITests/Pods-contalizze-contalizzeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-contalizze-contalizzeUITests/Pods-contalizze-contalizzeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CD49F59F91BB7A5D34DE4C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-contalizze/Pods-contalizze-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-contalizze/Pods-contalizze-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-contalizze/Pods-contalizze-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5B40E566E4EEF6A2278171D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-contalizze-contalizzeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		88B4003D2BBBBCEB00433B76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -351,6 +502,7 @@
 				8833E3CD2BBD394A003161B1 /* EstablishmentListViewModel.swift in Sources */,
 				88CB00A92BBE4788000B9DB3 /* EstablishmentCategoryListView.swift in Sources */,
 				88B400452BBBBCEB00433B76 /* contalizzeApp.swift in Sources */,
+				883D5A302BC4BE42002EE45D /* AppDelegate.swift in Sources */,
 				883F73752BBFBE6000F59294 /* Expense.swift in Sources */,
 				888C8A602BBC851F00A35AD7 /* CategoryListView.swift in Sources */,
 				8833E3D52BBD993F003161B1 /* EstablishmentCategoryListViewModel.swift in Sources */,
@@ -513,6 +665,7 @@
 		};
 		88B400662BBBBCED00433B76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27FDEC42007A92F6A1BB776D /* Pods-contalizze.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -521,6 +674,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"contalizze/Preview Content\"";
 				DEVELOPMENT_TEAM = 4KWUX6ULKJ;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = contalizze/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Contalizze;
@@ -545,6 +699,7 @@
 		};
 		88B400672BBBBCED00433B76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE70BEA243ADCB5D21D513CC /* Pods-contalizze.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -553,6 +708,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"contalizze/Preview Content\"";
 				DEVELOPMENT_TEAM = 4KWUX6ULKJ;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = contalizze/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Contalizze;
@@ -577,12 +733,14 @@
 		};
 		88B400692BBBBCED00433B76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F63AED9E66C3BEC3C46B8D62 /* Pods-contalizzeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4KWUX6ULKJ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
@@ -597,12 +755,14 @@
 		};
 		88B4006A2BBBBCED00433B76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A136FA4B37A4C121639107B3 /* Pods-contalizzeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4KWUX6ULKJ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
@@ -617,6 +777,7 @@
 		};
 		88B4006C2BBBBCED00433B76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C640EFFC424A249D80F0798 /* Pods-contalizze-contalizzeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -635,6 +796,7 @@
 		};
 		88B4006D2BBBBCED00433B76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 311FDF67F8D1A3A054ECA696 /* Pods-contalizze-contalizzeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

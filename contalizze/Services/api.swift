@@ -252,53 +252,5 @@ class Api {
         }
         task.resume()
     }
-    
-    
-    func uploadExtractCSV(fileURL: URL, completion: @escaping (Bool) -> Void) {
-        let url = baseURL.appendingPathComponent("upload/extract")
-        
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        
-        let boundary = "Boundary-\(UUID().uuidString)"
-        
-        request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
-        
-        var body = Data()
-        
-        do {
-            let fileData = try Data(contentsOf: fileURL)
-            let fileName = fileURL.lastPathComponent
-            
-            body.append("--\(boundary)\r\n")
-            body.append("Content-Disposition: form-data; name=\"file\"; filename=\"\(fileName)\"\r\n")
-            body.append("Content-Type: text/csv\r\n\r\n")
-            body.append(fileData)
-            body.append("\r\n--\(boundary)--\r\n")
-            
-            request.httpBody = body
-        } catch {
-            print("Error creating file data:", error)
-            DispatchQueue.main.async {
-                completion(false)
-            }
-            return
-        }
-        
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let _ = data, error == nil else {
-                DispatchQueue.main.async {
-                    completion(false)
-                }
-                return
-            }
-            
-            DispatchQueue.main.async {
-                completion(true)
-            }
-        }
-        task.resume()
-    }
-
 
 }

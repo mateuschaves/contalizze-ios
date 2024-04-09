@@ -1,0 +1,38 @@
+PODS:
+  - AppCenter (5.0.4):
+    - AppCenter/Analytics (= 5.0.4)
+    - AppCenter/Crashes (= 5.0.4)
+  - AppCenter/Analytics (5.0.4):
+    - AppCenter/Core
+  - AppCenter/Core (5.0.4)
+  - AppCenter/Crashes (5.0.4):
+    - AppCenter/Core
+  - Sentry (8.23.0):
+    - Sentry/Core (= 8.23.0)
+  - Sentry/Core (8.23.0)
+
+DEPENDENCIES:
+  - AppCenter
+  - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `8.23.0`)
+
+SPEC REPOS:
+  trunk:
+    - AppCenter
+
+EXTERNAL SOURCES:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 8.23.0
+
+CHECKOUT OPTIONS:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 8.23.0
+
+SPEC CHECKSUMS:
+  AppCenter: 85c92db0759d2792a65eb61d6842d2e86611a49a
+  Sentry: 1b0c990ea2a722f4ab91a5e1487ff64751ab94d1
+
+PODFILE CHECKSUM: 53788e2e39278c2a3f2f5b20312dd2de7e26db59
+
+COCOAPODS: 1.14.2

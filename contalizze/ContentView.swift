@@ -1,6 +1,7 @@
 import SwiftUI
 
 enum Tabs: String {
+    case expenses
     case categories
     case establishments
     case relations
@@ -13,11 +14,19 @@ struct ContentView: View {
     @State private var isCreatingCategory = false
     @State private var isCreatingEstablishment = false
     @State private var isCreatingEstablishmentCategory = false
-    @State private var selectedTab: Tabs = .categories
+    @State private var isCreatingDashboard = false
+    @State private var selectedTab: Tabs = .expenses
     
     var body: some View {
         NavigationView {
             TabView(selection: $selectedTab) {
+                ExpenseView()
+                    .tabItem {
+                        Image(systemName: "chart.pie")
+                        Text("Expenses")
+                    }
+                    .tag(Tabs.expenses)
+
                 CategoryListView(categoryListVM: categoryListVM)
                     .tabItem {
                         Image(systemName: "tag")
@@ -38,21 +47,26 @@ struct ContentView: View {
                         Text("Relations")
                     }
                     .tag(Tabs.relations)
+                
+                
             }
             .navigationBarTitle(selectedTab.rawValue.capitalized)
             .navigationBarItems(trailing:
-                Button(action: {
-                    switch selectedTab {
-                        case .categories:
-                            self.isCreatingCategory = true
-                        case .establishments:
-                            self.isCreatingEstablishment = true
+                                    Button(action: {
+                switch selectedTab {
+                    case .expenses:
+                        self.isCreatingDashboard = true
+                    case .categories:
+                        self.isCreatingCategory = true
+                    case .establishments:
+                        self.isCreatingEstablishment = true
                     case .relations:
-                            self.isCreatingEstablishmentCategory = true
-                    }
-                }) {
-                    Image(systemName: "plus")
+                        self.isCreatingEstablishmentCategory = true
+                    
                 }
+            }) {
+                Image(systemName: "plus")
+            }
             )
             .sheet(isPresented: $isCreatingCategory, onDismiss: {
                 categoryListVM.fetchCategories()

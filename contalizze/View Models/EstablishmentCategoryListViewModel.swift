@@ -17,7 +17,6 @@ class EstablishmentCategoryListViewModel: ObservableObject {
     func fetchEstablishmentsCategory() {
         Api().getAllEstablishmentsCategory { establishmentCategories  in
             if let establishmentCategories = establishmentCategories {
-                print(establishmentCategories)
                 self.establishmentsCategories = establishmentCategories.map(EstablishmentCategoryViewModel.init)
             }
         }
