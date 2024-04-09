@@ -5,7 +5,6 @@ Contalizze is a SwiftUI-based application that allows users to categorize their 
 <p align="center">
     <img src="doc/expenses.png" alt="Logo" width="200">
     <img src="doc/categories.png" alt="Logo" width="200">
-    <img src="doc/new-category.png" alt="Logo" width="200">
 </p>
 
 ## Key Features
