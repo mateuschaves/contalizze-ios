@@ -1,20 +1,27 @@
-name: iOS starter workflow
+name: iOS Build and Test
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
+
 jobs:
   build:
-
     runs-on: macOS-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Force Xcode 11
-      run: sudo xcode-select -switch /Applications/Xcode_11.3.app
-    - name: Run tests
-      run: xcodebuild clean test -project "contalizze.xcodeproj" -scheme "contalizze" -destination "platform=iOS Simulator,name=iPhone 11 Pro Max,OS=latest"
-    - name: Build App
-      run: xcodebuild -project "contalizze.xcodeproj" -scheme "contalizze" -destination "generic/platform=iOS" -configuration Release build CODE_SIGNING_ALLOWED=NO
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up Xcode
+      uses: actions/setup-xcode@v2
+      with:
+        xcode-version: '13.x'
+
+    - name: Install dependencies
+      run: |
+        sudo gem install cocoapods
+        pod install
+
+    - name: Build and Test
+      run: xcodebuild -workspace contalizze.xcworkspace -scheme contalizze clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
